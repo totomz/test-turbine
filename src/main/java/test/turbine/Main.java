@@ -6,6 +6,7 @@ import org.eclipse.jetty.servlet.ServletHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.netflix.turbine.init.TurbineInit;
 import com.netflix.turbine.streaming.servlet.TurbineStreamServlet;
 
 public class Main {
@@ -31,7 +32,7 @@ public class Main {
         context.addServlet(new ServletHolder(new SimpleServlet()), "/ciao");
         server.start();
         
-//        TurbineInit.init();
+        TurbineInit.init();
         
         log.info("Running on http://0.0.0.0:" + port + "/turbine.stream");
     }
