@@ -28,7 +28,7 @@ public class Main {
         final ServletHolder holder = new ServletHolder(servlet);
         
         context.addServlet(holder, "/turbine.stream");
-        context.addServlet(new ServletHolder(new SimpleServlet()), "/turbine.stream");
+        context.addServlet(new ServletHolder(new SimpleServlet()), "/ciao");
         server.start();
         
 //        TurbineInit.init();
