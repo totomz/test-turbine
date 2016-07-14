@@ -17,7 +17,7 @@ public class Main {
         
         log.info("Starting turbine server");
         
-        int port = 8680;
+        int port = 8080;
         
      // Starting the Hystrix event metrics server
         Server server = new Server(port);
